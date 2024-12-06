@@ -2,7 +2,7 @@
   "name": "php-inline-sql",
   "displayName": "Inline SQL for PHP",
   "description": "Adds SQL syntax highlighting for PHP strings with /*sql*/ prefix",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "ericgomez",
   "icon": "images/icon.jpg",
   "license": "MIT",
