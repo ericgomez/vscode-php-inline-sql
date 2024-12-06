@@ -1,0 +1,33 @@
+{
+    "scopeName": "source.php.sql",
+    "injectionSelector": "L:text.html.php -comment -string",
+    "patterns": [
+      {
+        "include": "#sql-string"
+      }
+    ],
+    "repository": {
+      "sql-string": {
+        "begin": "(/\\*sql\\*/)\\s*([\"'])",
+        "end": "([\"'])",
+        "beginCaptures": {
+          "1": {
+            "name": "comment.block.php"
+          },
+          "2": {
+            "name": "string.quoted.double.php"
+          }
+        },
+        "endCaptures": {
+          "1": {
+            "name": "string.quoted.double.php"
+          }
+        },
+        "patterns": [
+          {
+            "include": "source.sql"
+          }
+        ]
+      }
+    }
+  }
